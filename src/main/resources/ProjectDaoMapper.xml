@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="roderick.dao.ProjectDao">
+
+    <resultMap id="projectResultMap" type="roderick.domain.Project">
+        <id property="id" column="id"/>
+        <result property="projectName" column="projectName"/>
+        <result property="timeStamp" column="insertTime" javaType="java.util.Date"/>
+        <association property="student" javaType="roderick.domain.Student"><!--在结果集中封装复杂对象-->
+            <id property="studentId" column="studentId"/>
+            <result property="studentName" column="studentName"/>
+        </association>
+    </resultMap>
+
+    <select id="getAllProjects" resultMap="projectResultMap">
+        select * from projects
+    </select>
+
+    <insert id="addProject" parameterType="roderick.domain.Project">
+        insert into projects(projectName,studentId,studentName) value(#{projectName},#{student.studentId},#{student.studentName})
+    </insert>
+</mapper>
