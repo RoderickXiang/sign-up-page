@@ -16,6 +16,7 @@ public class ProjectServiceImpl implements ProjectService {
     SqlSession sqlSession;
     SqlSessionFactory sqlSessionFactory;
 
+    //mybatis代码块
     {
         InputStream inputStream = null;
         try {
