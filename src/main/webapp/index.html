@@ -24,9 +24,58 @@
         }
     </style>
     <script>
-        /*$(function () {
+        function checkProjectName() {
+            let $inputProjectName = $("#inputProjectName");
+            let projectName = $inputProjectName.val();
+            let reg = /^\S+/;
+            let flag = reg.test(projectName);
+            if (flag) {
+                $inputProjectName.css("border", "1px solid green");
+            } else {
+                $inputProjectName.css("border", "1px solid red");
+            }
+            return flag;
+        }
 
-        });*/
+        function checkStudentId() {
+            let $inputStudentId = $("#inputStudentId");
+            let studentId = $inputStudentId.val();
+            let reg = /^[1-9][0-9]+/;
+            let flag = reg.test(studentId);
+            if (flag) {
+                $inputStudentId.css("border", "1px solid green");
+            } else {
+                $inputStudentId.css("border", "1px solid red");
+            }
+            return flag;
+        }
+
+        function checkStudentName() {
+            let $inputStudentName = $("#inputStudentName");
+            let studentName = $inputStudentName.val();
+            let reg = /\S+/;
+            let flag = reg.test(studentName);
+            if (flag) {
+                $inputStudentName.css("border", "1px solid green");
+            } else {
+                $inputStudentName.css("border", "1px solid red");
+            }
+            return flag;
+        }
+
+        $(function () {
+            $("#submit").submit(function () {
+                if (checkStudentId() && checkProjectName() && checkStudentName()) {
+
+                }
+
+            });
+
+            $("#inputStudentId").blur(checkStudentId);
+            $("#inputStudentName").blur(checkStudentName);
+            $("#inputProjectName").blur(checkProjectName);
+        });
+
     </script>
 
 </head>
@@ -42,8 +91,8 @@
         <input type="text" class="form-control" id="inputStudentName" name="studentName" placeholder="姓名">
     </div>
     <div class="form-group col-md-offset-4 col-md-4">
-        <label for="inputProject">项目名称</label>
-        <input type="text" class="form-control" id="inputProject" name="projectName" placeholder="项目名称">
+        <label for="inputProjectName">项目名称</label>
+        <input type="text" class="form-control" id="inputProjectName" name="projectName" placeholder="项目名称">
     </div>
     <button id="submit" type="submit" class="btn btn-default col-md-offset-4 col-md-4">提交</button>
 </form>
