@@ -18,9 +18,23 @@
             color: #66afe9;
         }
 
-        h3 {
+        /*变色效果*/
+        h1 {
             font-weight: bold;
             text-align: center;
+            background-image: linear-gradient(to right, red, orange, yellow, green, yellow, orange, red, orange, yellow, green, yellow, orange, red);
+            -webkit-background-clip: text;
+            background-clip: revert;
+            -webkit-text-fill-color: transparent;
+            background-size: 200% 100%;
+            animation: bganimate 5s infinite linear;
+            font-size: 30px;
+        }
+
+        @keyframes bganimate {
+            100% {
+                background-position: -100% 100%;
+            }
         }
     </style>
     <script>
@@ -65,12 +79,11 @@
 
         $(function () {
             $("#submit").submit(function () {
-                if (checkStudentId() && checkProjectName() && checkStudentName()) {
-
-                }
+                /*if (checkStudentId() && checkProjectName() && checkStudentName()) {
+                    $.get("signUpServlet",)
+                }*/
 
             });
-
             $("#inputStudentId").blur(checkStudentId);
             $("#inputStudentName").blur(checkStudentName);
             $("#inputProjectName").blur(checkProjectName);
@@ -80,7 +93,7 @@
 
 </head>
 <body>
-<h3>Sign Up Now</h3>
+<h1>Sign Up Now</h1>
 <form method="get" action="signUpServlet">
     <div class="form-group col-md-offset-4 col-md-4" style="padding-top: 50px">
         <label for="inputStudentId">学号</label>
