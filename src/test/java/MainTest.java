@@ -23,7 +23,7 @@ public class MainTest {
 
     @Before
     public void init() throws IOException {
-        inputStream = Resources.getResourceAsStream("SqlMapConfig.xml");
+        inputStream = Resources.getResourceAsStream("sqlMapConfig.xml");
         sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
         sqlSession = sqlSessionFactory.openSession();
         projectDao = sqlSession.getMapper(ProjectDao.class);

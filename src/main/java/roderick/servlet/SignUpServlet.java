@@ -17,8 +17,8 @@ import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.util.Map;
 
-@WebServlet("/signUpServlet")
-public class SignUpServlet extends HttpServlet {
+
+public class SignUpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         ProjectService projectService;
         Map<String, String[]> parameterMap = request.getParameterMap();

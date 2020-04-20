@@ -20,7 +20,7 @@ public class ProjectServiceImpl implements ProjectService {
     {
         InputStream inputStream = null;
         try {
-            inputStream = Resources.getResourceAsStream("SqlMapConfig.xml");
+            inputStream = Resources.getResourceAsStream("sqlMapConfig.xml");
         } catch (IOException e) {
             e.printStackTrace();
         }
