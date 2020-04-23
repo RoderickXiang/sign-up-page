@@ -31,15 +31,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c131dbc-229c-4852-a8f0-27887239e2c3" name="Default Changelist" comment="所有配置文件入库">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/30979.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/roderick/controller/SignUpController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/roderick/dao/ProjectDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/roderick/dao/ProjectDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/roderick/service/Impl/ProjectServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/roderick/service/Impl/ProjectServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/roderick/servlet/SignUpServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/roderick/servlet/SignUpServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ProjectDaoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/projectDaoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/SqlMapConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sqlMapConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bean.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bean.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/roderick/servlet/SignUpServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/roderick/servlet/SignUpServletNew.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/bean.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/springmvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/projectDaoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/projectMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sqlMapConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sqlMapConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,6 +98,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/js" />
@@ -102,7 +108,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="Settings.JavaScript.Linters" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Java" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -270,6 +276,9 @@
       <workItem from="1587270326897" duration="10741000" />
       <workItem from="1587344681772" duration="5475000" />
       <workItem from="1587384131398" duration="5433000" />
+      <workItem from="1587477713457" duration="4910000" />
+      <workItem from="1587567650533" duration="2290000" />
+      <workItem from="1587612609423" duration="10102000" />
     </task>
     <task id="LOCAL-00001" summary="首次提交">
       <created>1586955907150</created>
@@ -361,7 +370,33 @@
                   </entry>
                 </map>
               </option>
+              <option name="TEXT_FILTER_SETTINGS">
+                <TextFilterSettings>
+                  <option name="REGEX" value="true" />
+                  <option name="MATCH_CASE" value="true" />
+                </TextFilterSettings>
+              </option>
             </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+            </list>
           </value>
         </entry>
       </map>
@@ -389,34 +424,34 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1587306015642" />
-    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1586942802762">
+    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1587480900685">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1586942802762" />
-    <state x="367" y="0" key="CommitChangelistDialog2" timestamp="1587306082926">
+    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1587480900685" />
+    <state x="367" y="0" key="CommitChangelistDialog2" timestamp="1587390558219">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="367" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1587306082926" />
+    <state x="367" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1587390558219" />
     <state x="548" y="167" key="FileChooserDialogImpl" timestamp="1587093559632">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="548" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1587093559632" />
-    <state width="1493" height="188" key="GridCell.Tab.0.bottom" timestamp="1587389869175">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1587628868684">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="188" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587389869175" />
-    <state width="1493" height="188" key="GridCell.Tab.0.center" timestamp="1587389869174">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587628868684" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1587628868684">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="188" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1587389869174" />
-    <state width="1493" height="188" key="GridCell.Tab.0.left" timestamp="1587389869174">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1587628868684" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1587628868684">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="188" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1587389869174" />
-    <state width="1493" height="188" key="GridCell.Tab.0.right" timestamp="1587389869175">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1587628868684" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1587628868684">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="188" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1587389869175" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1587628868684" />
     <state width="718" height="209" key="GridCell.Tab.1.bottom" timestamp="1587308604210">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -449,14 +484,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="718" height="209" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1587308604210" />
-    <state x="249" y="0" key="SettingsEditor" timestamp="1587346445498">
+    <state x="249" y="0" key="SettingsEditor" timestamp="1587625640167">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1587346445498" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1587218113548">
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1587625640167" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1587390676754">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1587218113548" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1587390676754" />
     <state x="295" y="141" width="945" height="640" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1587218017291">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -477,17 +512,5 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="449" y="95" key="spring file set editor/0.0.1536.824@0.0.1536.824" timestamp="1586920398846" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/roderick/dao/ProjectDao.java</url>
-          <line>7</line>
-          <properties class="roderick.dao.ProjectDao" method="addProject" />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

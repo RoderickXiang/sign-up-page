@@ -15,6 +15,6 @@
         </environment>
     </environments>
     <mappers>
-        <mapper resource="projectDaoMapper.xml"/>
+        <mapper resource="projectMapper.xml"/>
     </mappers>
 </configuration>

@@ -4,6 +4,8 @@ import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import roderick.dao.ProjectDao;
 import roderick.domain.Project;
 import roderick.service.ProjectService;
@@ -11,33 +13,19 @@ import roderick.service.ProjectService;
 import java.io.IOException;
 import java.io.InputStream;
 
+@Service("projectService")
 public class ProjectServiceImpl implements ProjectService {
     ProjectDao projectDao;
-    SqlSession sqlSession;
-    SqlSessionFactory sqlSessionFactory;
 
-    //mybatis代码块
-    {
-        InputStream inputStream = null;
-        try {
-            inputStream = Resources.getResourceAsStream("sqlMapConfig.xml");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
-        sqlSession = sqlSessionFactory.openSession();
-        projectDao = sqlSession.getMapper(ProjectDao.class);
-        try {
-            if (inputStream != null)
-                inputStream.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    @Autowired
+    public void setProjectDao(ProjectDao projectDao) {
+        this.projectDao = projectDao;
     }
+
+    /*不进行整合的话就使用mybatis生产代理的对象*/
 
     @Override
     public void addProject(Project newProject) {
         projectDao.addProject(newProject);
-        sqlSession.commit();
     }
 }

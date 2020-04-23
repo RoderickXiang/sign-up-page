@@ -80,14 +80,14 @@
                 if (checkStudentId() && checkProjectName() && checkStudentName()) {
                     $.get("signUpServlet", params, function (json) {
                         let $submit = $("#submit");
-                        if (json === "success") {
-                            $submit.attr("class","btn btn-success col-md-offset-4 col-md-4");
+                        if (json.msg === "success") {
+                            $submit.attr("class", "btn btn-success col-md-offset-4 col-md-4");
                             $submit.html("报名成功");
                         } else {
-                            $submit.attr("class","btn btn-danger col-md-offset-4 col-md-4");
+                            $submit.attr("class", "btn btn-danger col-md-offset-4 col-md-4");
                             $submit.html("失败");
                         }
-                    });
+                    }, "json");
                 }
 
             });
