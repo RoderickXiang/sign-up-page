@@ -30,21 +30,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c131dbc-229c-4852-a8f0-27887239e2c3" name="Default Changelist" comment="所有配置文件入库">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/30979.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/roderick/controller/SignUpController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
+    <list default="true" id="7c131dbc-229c-4852-a8f0-27887239e2c3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/roderick/dao/ProjectDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/roderick/dao/ProjectDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/roderick/service/Impl/ProjectServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/roderick/service/Impl/ProjectServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/roderick/servlet/SignUpServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/roderick/servlet/SignUpServletNew.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bean.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/springmvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/projectDaoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/projectMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sqlMapConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sqlMapConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -278,7 +267,7 @@
       <workItem from="1587384131398" duration="5433000" />
       <workItem from="1587477713457" duration="4910000" />
       <workItem from="1587567650533" duration="2290000" />
-      <workItem from="1587612609423" duration="10102000" />
+      <workItem from="1587612609423" duration="18177000" />
     </task>
     <task id="LOCAL-00001" summary="首次提交">
       <created>1586955907150</created>
@@ -322,7 +311,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587216551002</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="springMVC+spring+MyBatis代码重构实现基本功能">
+      <created>1587629371434</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1587629371434</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -413,7 +409,9 @@
     <MESSAGE value="字体效果" />
     <MESSAGE value="ajax发送数据" />
     <MESSAGE value="所有配置文件入库" />
-    <option name="LAST_COMMIT_MESSAGE" value="所有配置文件入库" />
+    <MESSAGE value="springMVC+spring+MyBatis代码重构" />
+    <MESSAGE value="springMVC+spring+MyBatis代码重构实现基本功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="springMVC+spring+MyBatis代码重构实现基本功能" />
   </component>
   <component name="WindowStateProjectService">
     <state x="249" y="0" key="#Project_Structure" timestamp="1586932698435">
@@ -428,10 +426,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1587480900685" />
-    <state x="367" y="0" key="CommitChangelistDialog2" timestamp="1587390558219">
+    <state x="367" y="0" key="CommitChangelistDialog2" timestamp="1587629370767">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="367" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1587390558219" />
+    <state x="367" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1587629370767" />
     <state x="548" y="167" key="FileChooserDialogImpl" timestamp="1587093559632">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -488,10 +486,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1587625640167" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1587390676754">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1587629521993">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1587390676754" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1587629521993" />
     <state x="295" y="141" width="945" height="640" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1587218017291">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -500,10 +498,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="178" y="73" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1587345428066" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1586959484531">
+    <state x="425" y="187" key="run.anything.popup" timestamp="1587644956575">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1586959484531" />
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1587644956575" />
     <state x="530" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1587389713678">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

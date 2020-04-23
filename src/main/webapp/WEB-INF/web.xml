@@ -4,6 +4,7 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
     <display-name>Archetype Created Web Application</display-name>
 
+    <!--加载spring框架-->
     <listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
     </listener>
@@ -12,7 +13,7 @@
         <param-value>classpath:applicationContext.xml</param-value>
     </context-param>
 
-    <!--spring编码过滤器-->
+    <!--springMVC编码过滤器-->
     <filter>
         <filter-name>characterEncodingFilter</filter-name>
         <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
