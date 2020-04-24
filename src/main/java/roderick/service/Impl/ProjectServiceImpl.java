@@ -12,6 +12,7 @@ import roderick.service.ProjectService;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.List;
 
 @Service("projectService")
 public class ProjectServiceImpl implements ProjectService {
@@ -27,5 +28,10 @@ public class ProjectServiceImpl implements ProjectService {
     @Override
     public void addProject(Project newProject) {
         projectDao.addProject(newProject);
+    }
+
+    @Override
+    public List<Project> getAllProject() {
+        return projectDao.getAllProjects();
     }
 }

@@ -5,6 +5,9 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 import roderick.dao.ProjectDao;
 import roderick.domain.Project;
 import roderick.domain.Student;
@@ -64,5 +67,15 @@ public class MainTest {
 
         inputStream.close();
         sqlSession.close();
+    }
+
+    @Test
+    public void serviceTest() throws IOException {
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
+        ProjectService projectService = (ProjectService) applicationContext.getBean("projectService");
+        List<Project> allProject = projectService.getAllProject();
+        for (Project project : allProject) {
+            System.out.println(project);
+        }
     }
 }
